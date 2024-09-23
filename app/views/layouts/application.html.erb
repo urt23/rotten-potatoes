@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= content_for(:title) || "Rottenpotatoes" %></title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Rotten Potatoes</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= yield :head %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+</head>
 
-    <link rel="manifest" href="/manifest.json">
-    <link rel="icon" href="/icon.png" type="image/png">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/icon.png">
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
+<body>
+  <header>
+    <h1>RottenPotatoes</h1>
+    <nav>
+      <%= link_to 'Home', movies_path %> |
+      <%= link_to 'New Movie', new_movie_path %>
+    </nav>
+  </header>
 
-  <body>
+  <div class="content">
     <%= yield %>
-  </body>
+  </div>
+
+  <footer>
+    <p>© 2024 Rotten Potatoes. All Rights Reserved.</p>
+  </footer>
+</body>
 </html>

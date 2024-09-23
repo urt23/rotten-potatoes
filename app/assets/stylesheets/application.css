@@ -13,3 +13,127 @@
  *= require_tree .
  *= require_self
  */
+.sorted-asc {
+    color:green;
+    font-weight: bold;
+}
+
+.sorted-desc {
+    color: red;
+    font-weight: bold;
+}
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+  
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+  
+nav {
+    margin-top: 10px;
+}
+  
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+  
+nav a:hover {
+    text-decoration: underline;
+}
+  
+  /* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+  
+footer p {
+    margin: 0;
+}
+  
+  /* Content area styling */
+.content {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+  /* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+  
+  table, th, td {
+    border: 1px solid #ddd;
+}
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+}
+  
+  th {
+    background-color: #f2f2f2;
+}
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+  
+  tbody tr:hover {
+    background-color: #e2e2e2;
+}
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  
+form input[type="text"],
+form input[type="date"],
+form textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+  
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+}
+  
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+  
+  

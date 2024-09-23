@@ -1,0 +1,28 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Movies" %>
+
+<h1>Movies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= sort_link('title', 'Title') %></th>
+      <th><%= sort_link('rating', 'Rating') %></th>
+      <th><%= sort_link('release_date','Release Date') %></th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @movies.each do |movie| %>
+      <tr>
+        <td><%= movie.title %></td>
+        <td><%= movie.rating %></td>
+        <td><%= movie.release_date %></td>
+        <td><%= link_to "Show", movie%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to "New movie", new_movie_path %>
